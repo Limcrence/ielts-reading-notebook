@@ -1,0 +1,213 @@
+{
+  "checked_at": "2026-01-01",
+  "articles": [
+    {
+      "id": "demo-riverside",
+      "title": "The Riverside Tool Library",
+      "paragraphs": [
+        {
+          "label": "A",
+          "text": "The Riverside Tool Library started in a spare room behind a community centre. The volunteers wanted households to borrow drills and gardening tools they rarely needed. Membership opened to local residents as soon as the project began."
+        },
+        {
+          "label": "B",
+          "text": "At first, the library could only lend tools during two evening sessions. It later put lockers outside the building, allowing readers to collect items after the office closed. Members could also reserve tools online."
+        },
+        {
+          "label": "C",
+          "text": "The second winter brought long queues for repair advice. The library added workbenches and asked experienced volunteers to demonstrate simple fixes. The new arrangement reduced waiting time by letting several learners practise at once."
+        },
+        {
+          "label": "D",
+          "text": "The project now records the number of loans and repairs each month. The coordinator publishes a short report on these results for residents. The report does not estimate changes in household spending."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "source_type": "专项练习",
+      "source_name": "示例练习",
+      "assignment_group": "原创演示",
+      "passage_code": "DEMO_R1",
+      "date": "2026-01-01",
+      "id": "demo-tools-01",
+      "article_id": "demo-riverside",
+      "title": "The Riverside Tool Library"
+    }
+  ],
+  "questions": [
+    {
+      "id": "demo-tools-01-q1",
+      "exercise_id": "demo-tools-01",
+      "article_id": "demo-riverside",
+      "question_number": "1",
+      "question_type": "判断题（TFNG）",
+      "question": "Local residents could join the library from the beginning.",
+      "points": 1,
+      "score": 0,
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "Not Given"
+      },
+      "student_answer_raw": [
+        "B"
+      ],
+      "correct_answer_raw": [
+        "A"
+      ],
+      "status": "答错",
+      "group_id": 1,
+      "instructions": "",
+      "review": {
+        "evidence": [
+          {
+            "paragraph": "A",
+            "text": "Membership opened to local residents as soon as the project began."
+          }
+        ],
+        "paraphrases": "from the beginning = as soon as the project began",
+        "explanation": "原文明确说项目刚开始就向当地居民开放，因此选 True。"
+      }
+    },
+    {
+      "id": "demo-tools-01-q2",
+      "exercise_id": "demo-tools-01",
+      "article_id": "demo-riverside",
+      "question_number": "2",
+      "question_type": "填空题",
+      "question": "The library installed [本题____] so users could collect tools after closing time.",
+      "points": 1,
+      "score": 0,
+      "options": {},
+      "student_answer_raw": [
+        "tools"
+      ],
+      "correct_answer_raw": [
+        "lockers"
+      ],
+      "status": "答错",
+      "group_id": 2,
+      "instructions": "Choose ONE WORD ONLY from the passage.",
+      "review": {
+        "evidence": [
+          {
+            "paragraph": "B",
+            "text": "It later put lockers outside the building, allowing readers to collect items after the office closed."
+          }
+        ],
+        "paraphrases": "installed = put；after closing time = after the office closed",
+        "explanation": "空格问新安装的设备，借出去的工具是被取走的物品。"
+      }
+    },
+    {
+      "id": "demo-tools-01-q3",
+      "exercise_id": "demo-tools-01",
+      "article_id": "demo-riverside",
+      "question_number": "3",
+      "question_type": "细节段落匹配",
+      "question": "Which paragraph mentions a way to reduce queues by teaching several people together?",
+      "points": 1,
+      "score": 0,
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "student_answer_raw": [
+        "B"
+      ],
+      "correct_answer_raw": [
+        "C"
+      ],
+      "status": "答错",
+      "group_id": 3,
+      "instructions": "",
+      "review": {
+        "evidence": [
+          {
+            "paragraph": "C",
+            "text": "The new arrangement reduced waiting time by letting several learners practise at once."
+          }
+        ],
+        "paraphrases": "reduce queues = reduced waiting time；several people together = several learners … at once",
+        "explanation": "C 段讲同时练习如何缩短等候。B 段的时间线索是关门后仍可取物。"
+      }
+    },
+    {
+      "id": "demo-tools-01-q4",
+      "exercise_id": "demo-tools-01",
+      "article_id": "demo-riverside",
+      "question_number": "4-5",
+      "question_type": "多选题",
+      "question": "Which TWO services made access to borrowing tools more convenient?",
+      "points": 2,
+      "score": 1,
+      "options": {
+        "A": "Collect items after the office closed",
+        "B": "Read monthly reports on repairs",
+        "C": "Reserve items online",
+        "D": "Practise with volunteers"
+      },
+      "student_answer_raw": [
+        "A",
+        "D"
+      ],
+      "correct_answer_raw": [
+        "A",
+        "C"
+      ],
+      "status": "部分正确",
+      "group_id": 4,
+      "instructions": "",
+      "review": {
+        "evidence": [
+          {
+            "paragraph": "B",
+            "text": "It later put lockers outside the building, allowing readers to collect items after the office closed."
+          },
+          {
+            "paragraph": "B",
+            "text": "Members could also reserve tools online."
+          }
+        ],
+        "paraphrases": "reserve = book in advance；access to borrowing = reserving and collecting tools",
+        "explanation": "题目限定借工具的便利性。B 段的关门后取物和网上预约都对应借用流程，修理示范是另一项服务。"
+      }
+    },
+    {
+      "id": "demo-tools-01-q6",
+      "exercise_id": "demo-tools-01",
+      "article_id": "demo-riverside",
+      "question_number": "6",
+      "question_type": "判断题（TFNG）",
+      "question": "The library coordinator was paid by the city.",
+      "points": 1,
+      "score": 0,
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "Not Given"
+      },
+      "student_answer_raw": [],
+      "correct_answer_raw": [
+        "C"
+      ],
+      "status": "未作答",
+      "group_id": 5,
+      "instructions": "",
+      "review": {
+        "evidence": [
+          {
+            "paragraph": "D",
+            "text": "The coordinator publishes a short report on these results for residents."
+          }
+        ],
+        "paraphrases": "coordinator = the person who publishes the report",
+        "explanation": "原文交代协调员的工作，没写是否领薪或由谁付薪，所以选 Not Given。"
+      }
+    }
+  ]
+}
