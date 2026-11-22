@@ -86,10 +86,12 @@ function metadata(row: Record<string, unknown>, at: string) {
   };
 }
 
-export function validateLibrary(value: unknown): Library {
+export function validateLibrary(value: unknown, stored = false): Library {
   const input = object(value, '题库');
+  // Imports are capped per file. A student's saved library can span several validated files.
+  const rowLimit = stored ? Number.MAX_SAFE_INTEGER : 2000;
   const labelAliases = new Map<string, Map<string, string[]>>();
-  const articles = list(input.articles, '文章', 2000).map((value, i): Article => {
+  const articles = list(input.articles, '文章', rowLimit).map((value, i): Article => {
     const at = '文章 ' + (i + 1) + ' ';
     const row = object(value, at);
     const paragraphs = list(row.paragraphs, at + '段落', 250).map(value => {
@@ -120,7 +122,7 @@ export function validateLibrary(value: unknown): Library {
     return {id, title, paragraphs:normalized};
   });
   const byArticle = index(articles, '文章列表');
-  const exercises = list(input.exercises, '练习', 2000).map((value, i): Exercise => {
+  const exercises = list(input.exercises, '练习', rowLimit).map((value, i): Exercise => {
     const at = '练习 ' + (i + 1) + ' ';
     const row = object(value, at);
     const articleId = key(row.article_id, at + 'Article ID');
@@ -133,7 +135,7 @@ export function validateLibrary(value: unknown): Library {
   });
   const byExercise = index(exercises, '练习列表');
   const positions = new Set<string>();
-  const questions = list(input.questions, '题目', 2000).map((value, i): Question => {
+  const questions = list(input.questions, '题目', rowLimit).map((value, i): Question => {
     const row = object(value, '题目');
     const at = '题目 ' + (i + 1) + ' ';
     const exerciseId = key(row.exercise_id, at + 'Exercise ID');
@@ -218,5 +220,5 @@ export function mergeLibraries(current: Library | null, incoming: Library): Libr
       ...item, review:item.review ?? existing.review,
       image_urls:item.image_urls.length ? item.image_urls : existing.image_urls,
     })),
-  });
+  }, true);
 }

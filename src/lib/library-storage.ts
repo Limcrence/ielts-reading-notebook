@@ -20,7 +20,7 @@ export async function readPersonalLibrary(): Promise<Library | null> {
     const request = db.transaction(storeName).objectStore(storeName).get(personalKey);
     request.onsuccess = () => {
       db.close();
-      try { resolve(request.result ? validateLibrary(request.result) : null); }
+      try { resolve(request.result ? validateLibrary(request.result, true) : null); }
       catch (error) { reject(error); }
     };
     request.onerror = () => { db.close(); reject(request.error); };
@@ -37,7 +37,7 @@ export async function addPersonalLibrary(incoming: Library): Promise<Library> {
     let validationError: unknown;
     reading.onsuccess = () => {
       try {
-        const current = reading.result ? validateLibrary(reading.result) : null;
+        const current = reading.result ? validateLibrary(reading.result, true) : null;
         result = mergeLibraries(current, incoming);
         store.put(result, personalKey);
       } catch (error) {

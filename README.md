@@ -4,9 +4,11 @@
 
 ## 开始使用
 
-在能操作本机文件和浏览器的 AI 里打开 [执行手册](./AI_PROMPT.md)，按手册下载、启动错题本和导入个人报告。
+把下面这句话发给能操作本机的 WorkBuddy 或其他 AI：
 
-手册从下载最新版开始，涵盖 WorkBuddy 和豆包的本机设置、学校官网登录、登录后自动读取已批阅报告、首次导入和批量整理。手动下载时可以 [获取模板 ZIP](https://github.com/Limcrence/ielts-reading-notebook/archive/refs/heads/main.zip)，解压后选中能直接看到 `README.md` 和 `AI_PROMPT.md` 的文件夹。
+> 请按 https://github.com/Limcrence/ielts-reading-notebook/blob/main/AI_PROMPT.md 帮我导入学校已批阅的雅思阅读周测和作业。我来登录，你做完告诉我一共几份、成功几份、漏了哪几份。
+
+在弹出的学校官网窗口登录，剩下的由 AI 操作。程序会显示“已读取几份/共几份”。中途关掉也能在下次继续。每个人用自己的学校账号和电脑即可。[给 AI 的操作步骤](./AI_PROMPT.md)
 
 ## 以后怎么用
 

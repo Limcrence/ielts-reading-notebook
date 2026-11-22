@@ -15,7 +15,7 @@ export function applyOperation(progress:Progress,op:SaveOperation,now=Date.now()
   return {...progress,[op.questionId]:record};
 }
 export function validateRecords(value:unknown,validIds:Set<string>):ReviewRecord[]{
-  if(!Array.isArray(value)||value.length>2000)throw new Error('进度文件格式不正确');
+  if(!Array.isArray(value)||value.length>validIds.size)throw new Error('进度文件格式不正确');
   const seen=new Set<string>();
   return value.map(item=>{
     if(!item||typeof item!=='object'||!validIds.has(item.questionId))throw new Error('进度包含不属于此题库的题目');
